@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="feedbacksystem.FXMLDocumentController">
+    <children>
+      <AnchorPane layoutX="-0.5" layoutY="1.0">
+         <children>
+            <Line endX="833.0" layoutY="74.5" />
+            <Label alignment="CENTER" layoutX="14.5" prefHeight="73.0" prefWidth="492.0" text="FEEDBACK SYSTEM" underline="true">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+            <Label fx:id="teacher" layoutX="638.5" layoutY="9.0" prefHeight="28.0" prefWidth="193.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="subject" layoutX="638.5" layoutY="37.0" prefHeight="17.0" prefWidth="193.0" />
+            <Label fx:id="session" layoutX="638.5" layoutY="56.0" prefHeight="17.0" prefWidth="193.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="640.0" layoutY="155.0" prefHeight="370.0" prefWidth="193.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="193.0" text="1.Unsatisfactory" underline="true" />
+            <Label layoutY="35.0" prefHeight="35.0" prefWidth="193.0" text="2.Below Average" underline="true" />
+            <Label layoutY="70.0" prefHeight="35.0" prefWidth="193.0" text="3.Average" underline="true" />
+            <Label layoutY="107.0" prefHeight="35.0" prefWidth="193.0" text="4.Good" underline="true" />
+            <Label layoutY="142.0" prefHeight="35.0" prefWidth="193.0" text="5.Excellent" underline="true" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="submit" layoutX="660.0" layoutY="585.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="112.0" text="SUBMIT" />
+      <ScrollPane layoutY="91.0" prefHeight="639.0" prefWidth="628.0">
+         <content>
+            <AnchorPane fx:id="page1" maxWidth="624.0" minWidth="616.0" prefHeight="850.0" prefWidth="616.0" snapToPixel="false">
+               <children>
+                  <Label layoutX="379.0" layoutY="5.0" prefHeight="17.0" prefWidth="205.0" text="  1            2          3          4          5">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Group layoutX="8.0">
+                     <children>
+                        <Label layoutX="6.0" prefHeight="28.0" prefWidth="227.0" text="Unit -I : Algorithms" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Group layoutY="36.0">
+                           <children>
+                              <RadioButton fx:id="rb111" layoutX="383.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb112" layoutX="413.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb113" layoutX="453.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb114" layoutX="495.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb115" layoutX="535.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk11" disable="true" layoutX="570.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="22.0" />
+                              <Label layoutY="4.0" prefHeight="17.0" prefWidth="370.0" text="1.Definations and Notations:Asymptotic Notations" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="60.0">
+                           <children>
+                              <RadioButton fx:id="rb121" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb122" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb123" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb124" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb125" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk12" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="2.big oh, small oh, omega and theta notations" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="84.0">
+                           <children>
+                              <RadioButton fx:id="rb131" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb132" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb133" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb134" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb135" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk13" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="3.Recursive algorithms" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="109.0">
+                           <children>
+                              <RadioButton fx:id="rb141" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb142" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb143" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb144" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb145" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk14" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="4.solving recurrence equations" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="134.0">
+                           <children>
+                              <RadioButton fx:id="rb151" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb152" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb153" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb154" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb155" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk15" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="5.Heap, shell, radix, insertion, selection and bubble sort" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="160.0">
+                           <children>
+                              <RadioButton fx:id="rb161" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb162" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb163" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb164" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb165" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk16" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="6.sequential, binary and Fibonacci search" />
+                           </children>
+                        </Group>
+                     </children>
+                  </Group>
+                  <Group layoutX="376.5" layoutY="-4.5">
+                     <children>
+                        <Line endY="920.0" layoutX="80.0" />
+                        <Line endY="920.0" layoutX="120.0" />
+                        <Line endY="920.0" layoutX="40.0" />
+                        <Line endY="920.0" />
+                        <Line endY="920.0" layoutX="160.0" />
+                        <Line endY="920.0" layoutX="200.0" />
+                     </children>
+                  </Group>
+                  <Group layoutX="8.0" layoutY="178.0">
+                     <children>
+                        <Label layoutX="6.0" prefHeight="28.0" prefWidth="305.0" text="Unit -II : Divide and Conquer Method" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Group layoutY="36.0">
+                           <children>
+                              <RadioButton fx:id="rb211" layoutX="383.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb212" layoutX="413.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb213" layoutX="453.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb214" layoutX="495.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb215" layoutX="535.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk21" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label layoutY="4.0" prefHeight="17.0" prefWidth="370.0" text="1.binary search" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="60.0">
+                           <children>
+                              <RadioButton fx:id="rb221" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb222" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb223" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb224" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb225" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk22" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="2.merge sortand quick sort" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="84.0">
+                           <children>
+                              <RadioButton fx:id="rb231" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb232" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb233" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb234" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb235" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk23" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="3.Stassen’s Matrix multiplication" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="109.0">
+                           <children>
+                              <RadioButton fx:id="rb241" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb242" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb243" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb244" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb245" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk24" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="4.knapsack problem" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="134.0">
+                           <children>
+                              <RadioButton fx:id="rb251" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb252" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb253" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb254" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb255" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk25" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="5.minimum spanning tree algorithms" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="159.0">
+                           <children>
+                              <RadioButton fx:id="rb261" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb262" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb263" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb264" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb265" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk26" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="6.single source shortest path algorithm" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="186.0">
+                           <children>
+                              <RadioButton fx:id="rb271" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb272" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb273" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb274" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb275" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk27" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="7.scheduling, optimal storage on tapes,optimal merge patterns" />
+                           </children>
+                        </Group>
+                     </children>
+                  </Group>
+                  <Group layoutX="8.0" layoutY="382.0" AnchorPane.rightAnchor="12.0">
+                     <children>
+                        <Label layoutX="6.0" prefHeight="28.0" prefWidth="306.0" text="Unit -III : Dynamic Programming" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Group layoutY="36.0">
+                           <children>
+                              <RadioButton fx:id="rb311" layoutX="383.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb312" layoutX="413.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb313" layoutX="453.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb314" layoutX="495.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb315" layoutX="535.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk31" disable="true" layoutX="570.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="18.0" />
+                              <Label layoutY="4.0" prefHeight="17.0" prefWidth="370.0" text="1all pair shortest path algorithm,multi-stage graphs" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="60.0">
+                           <children>
+                              <RadioButton fx:id="rb321" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb322" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb323" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb324" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb325" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk32" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="2. 0/1 Knapsack and Travelling salesman problem" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="84.0">
+                           <children>
+                              <RadioButton fx:id="rb331" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb332" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb333" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb334" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb335" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk33" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="3.chained matrix multiplication,approaches using recursion" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="109.0">
+                           <children>
+                              <RadioButton fx:id="rb341" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb342" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb343" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb344" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb345" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk34" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="4.solving recurrence equations,memory functions" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="134.0">
+                           <children>
+                              <RadioButton fx:id="rb351" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb352" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb353" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb354" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb355" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk35" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="5.Basic Search and Traversal technique" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="160.0">
+                           <children>
+                              <RadioButton fx:id="rb361" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb362" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb363" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb364" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb365" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk36" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="6.AND/OR graphs,biconnected components ,topological sorting" />
+                           </children>
+                        </Group>
+                     </children>
+                  </Group>
+                  <Group layoutX="8.0" layoutY="562.0" AnchorPane.rightAnchor="12.0">
+                     <children>
+                        <Label layoutX="6.0" prefHeight="28.0" prefWidth="227.0" text="Unit -IV : Backtracking" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Group layoutY="36.0">
+                           <children>
+                              <RadioButton fx:id="rb411" layoutX="383.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb412" layoutX="413.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb413" layoutX="453.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb414" layoutX="495.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb415" layoutX="535.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk41" disable="true" layoutX="570.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="22.0" />
+                              <Label layoutY="4.0" prefHeight="17.0" prefWidth="370.0" text="1.Back tracking and Recursive back tracking" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="60.0">
+                           <children>
+                              <RadioButton fx:id="rb421" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb422" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb423" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb424" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb425" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk42" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="2.8-queens problem,sum of subsets" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="84.0">
+                           <children>
+                              <RadioButton fx:id="rb431" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb432" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb433" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb434" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb435" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk43" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="3.graph coloring,Hamiltonian cycle" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="109.0">
+                           <children>
+                              <RadioButton fx:id="rb441" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb442" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb443" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb444" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb445" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk44" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="4.Knapsack problem" />
+                           </children>
+                        </Group>
+                     </children>
+                  </Group>
+                  <Group layoutX="8.0" layoutY="735.0">
+                     <children>
+                        <Label layoutX="6.0" prefHeight="28.0" prefWidth="227.0" text="Unit -V : Branch and Bound Method" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Group layoutY="36.0">
+                           <children>
+                              <RadioButton fx:id="rb511" layoutX="383.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb512" layoutX="413.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb513" layoutX="453.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb514" layoutX="495.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb515" layoutX="535.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk51" disable="true" layoutX="570.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="22.0" />
+                              <Label layoutY="4.0" prefHeight="17.0" prefWidth="370.0" text="1.Least Cost (LC) search" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="60.0">
+                           <children>
+                              <RadioButton fx:id="rb521" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb522" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb523" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb524" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb525" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk52" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="2.the 15-puzzle problem" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="84.0">
+                           <children>
+                              <RadioButton fx:id="rb531" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb532" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb533" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb534" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb535" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk53" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="3.control abstractions for LC,Search,Bounding" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="109.0">
+                           <children>
+                              <RadioButton fx:id="rb541" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb542" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb543" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb544" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb545" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk54" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="4.FIFO Branch-and-Bound,0/1 Knapsack problem" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="134.0">
+                           <children>
+                              <RadioButton fx:id="rb551" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb552" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb553" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb554" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb555" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk55" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="5.travelling salesman problem" />
+                           </children>
+                        </Group>
+                        <Group layoutX="1.0" layoutY="160.0">
+                           <children>
+                              <RadioButton fx:id="rb561" layoutX="382.0" mnemonicParsing="false" />
+                              <RadioButton fx:id="rb562" layoutX="412.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb563" layoutX="452.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb564" layoutX="494.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="rb565" layoutX="534.0" mnemonicParsing="false">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <CheckBox fx:id="chk56" disable="true" layoutX="570.0" mnemonicParsing="false" />
+                              <Label prefHeight="17.0" prefWidth="364.0" text="6.Cook’s theorem.,Introduction to NP-Hard and NP-Completeness" />
+                           </children>
+                        </Group>
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Label fx:id="ermsg" layoutX="646.0" layoutY="544.0" prefHeight="17.0" prefWidth="144.0" textFill="#f50c0c" />
+      <Label fx:id="Name" layoutX="640.0" layoutY="114.0" prefHeight="25.0" prefWidth="182.0" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
