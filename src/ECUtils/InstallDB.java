@@ -12,21 +12,18 @@ public class InstallDB  implements ECConst{
 	}*/
 	
 	public static void createDB(){
-		try {
-			Connection con = DriverManager.getConnection("jdbc:mysql://"+DB_HOST+":3306", DB_USER, DB_PASS);
+		try (Connection con = DriverManager.getConnection("jdbc:mysql://"+DB_HOST, DB_USER, DB_PASS)) {
 			String sql;
 			
-			sql = "create schema if not exists " + DB_NAME;
+			sql = "create database if not exists  " +DB_NAME;
                         PreparedStatement st = con.prepareStatement(sql);
-			st = con.prepareStatement(sql);
+			
 			st.execute();
-			con.close();		
-			System.out.println(DB_NAME + " created");
-                        for(String sql1 : SQLS)
-			runSQL(sql1);	
 		} catch (Exception e) {
-			e.printStackTrace();
 		}
+                System.out.println(DB_NAME + " created");
+                for(String sql1 : SQLS)
+                    runSQL(sql1);
 	}
 	public static void runSQL(String sql){
 		try {
