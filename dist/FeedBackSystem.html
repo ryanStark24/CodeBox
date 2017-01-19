@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'FeedBackSystem.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedfeedbacksystem() {
+        dtjava.embed(
+            {
+                id : 'feedbacksystem',
+                url : 'FeedBackSystem.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedfeedbacksystem);
+</script>
+
+</head><body>
+<h2>Test page for <b>FeedBackSystem</b></h2>
+  <b>Webstart:</b> <a href='FeedBackSystem.jnlp' onclick="return launchApplication('FeedBackSystem.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
